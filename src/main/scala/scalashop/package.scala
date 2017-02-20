@@ -44,9 +44,9 @@ package object scalashop {
       for (
         i <- -radius to radius;
         j <- -radius to radius
-      ) yield (clamp(x + i, 0, src.width), clamp(y + j, 0, src.height))
+      ) yield (scalashop.clamp(x + i, 0, src.width - 1), scalashop.clamp(y + j, 0, src.height - 1))
     }.distinct.map({
-      case (`x`, `y`) =>
+      case (x, y) =>
         val pixel = src(x, y)
         (red(pixel), green(pixel), blue(pixel), alpha(pixel))
     })

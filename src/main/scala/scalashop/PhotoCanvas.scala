@@ -72,7 +72,7 @@ class PhotoCanvas extends JComponent {
     repaint()
   }
 
-  override def paintComponent(gcan: Graphics): Boolean = {
+  override def paintComponent(gcan: Graphics) = {
     super.paintComponent(gcan)
 
     val width = image.width
