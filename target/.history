@@ -10,3 +10,6 @@ exit
 runMain scalashop.ScalaShop
 sbt
 runMain scalashop.ScalaShop
+runMain scalashop.VerticalBoxBlurRunner
+runMain scalashop.ScalaShop
+exit

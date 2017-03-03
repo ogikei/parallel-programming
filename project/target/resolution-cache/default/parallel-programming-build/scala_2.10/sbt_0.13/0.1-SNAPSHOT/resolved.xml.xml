@@ -4,7 +4,7 @@
 		module="parallel-programming-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20170220220229"
+		publication="20170303150024"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>
