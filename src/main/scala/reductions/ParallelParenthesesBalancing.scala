@@ -43,6 +43,7 @@ object ParallelParenthesesBalancing {
   def balance(chars: Array[Char]): Boolean = {
     def checkOpenClose(chars: Array[Char], openCount: Int): Boolean = {
       if (chars.isEmpty) openCount == 0
+      else if (openCount < 0) false
       else if (chars.head == '(') checkOpenClose(chars.tail, openCount + 1)
       else if (chars.head == ')') checkOpenClose(chars.tail, openCount - 1)
       else checkOpenClose(chars.tail, openCount)
